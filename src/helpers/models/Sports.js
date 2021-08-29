@@ -7,8 +7,12 @@ const SportsSchema = new Schema({
     name: {
         type: String,
         required: true
+    },
+    imageURL: {
+        type: String,
+        required: true
     }
- });
+ })
 
 // module.exports = Sports = mongoose.model('sports', SportsSchema)
 module.exports = mongoose.model('Sports', SportsSchema)
