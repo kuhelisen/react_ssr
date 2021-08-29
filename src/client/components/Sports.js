@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { fetchSports } from '../actions'
 
@@ -13,7 +14,7 @@ class Sports extends Component {
 				<div className="grid-example col s12 m6">
 					<div className="card small" style={{ backgroundImage: "url(" + "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMZxbNYTvbFQsEJMK3mctvSaoo_5ayzRmo2w&usqp=CAU" + ")", backgroundRepeat: "no-repeat", backgroundSize: "cover", opacity: 0.8, borderRadius: 45 }}>
 						<div className="card-content">
-							<span className="card-title" style={{ color: "white", fontWeight: "bold" }}>{sport.name}</span>
+							<span className="card-title"><Link to="/sports" style={{ color: "white", fontWeight: "bold" }}>{sport.name}</Link></span>
 							{/* <p><a href="#">Badminton</a></p> */}
 						</div>
 					</div>

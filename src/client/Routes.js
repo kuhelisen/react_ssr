@@ -12,10 +12,10 @@ export default [
                 path: '/',
                 exact: true
             },
-            // {
-            //     ...HomePage,
-            //     path: '/ncr',
-            // },
+            {
+                ...HomePage,
+                path: '/ncr',
+            },
             {
                 ...SportsListPage,
                 path: '/sports',
