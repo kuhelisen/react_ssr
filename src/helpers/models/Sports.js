@@ -14,5 +14,4 @@ const SportsSchema = new Schema({
     }
  })
 
-// module.exports = Sports = mongoose.model('sports', SportsSchema)
 module.exports = mongoose.model('Sports', SportsSchema)

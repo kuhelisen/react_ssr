@@ -14,7 +14,7 @@ class Sports extends Component {
 				<div className="grid-example col s12 m6">
 					<div className="card small" style={{ backgroundImage: "url(" + sport.imageURL + ")", backgroundRepeat: "no-repeat", backgroundSize: "cover", opacity: 0.8, borderRadius: 45 }}>
 						<div className="card-content">
-							<span className="card-title"><Link to="/sports" style={{ color: "white", fontWeight: "bold" }}>{sport.name}</Link></span>
+							<span className="card-title"><Link to="/badminton" style={{ color: "white", fontWeight: "bold" }}>{sport.name}</Link></span>
 							{/* <p><a href="#">Badminton</a></p> */}
 						</div>
 					</div>

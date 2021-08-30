@@ -1,4 +1,5 @@
 {
+  "homepage": "http://senac.github.io/react_ssr",
   "name": "fitso-react-ssr-project",
   "version": "1.0.0",
   "description": "Fitso assignment to create server side rendering react app",
@@ -7,7 +8,9 @@
     "dev": "npm-run-all --parallel dev:*",
     "dev:server": "nodemon --watch build --exec \"node build/bundle.js\"",
     "dev:build-server": "webpack --config webpack.server.js --watch",
-    "dev:build-client": "webpack --config webpack.client.js --watch"
+    "dev:build-client": "webpack --config webpack.client.js --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "antara_sen",
   "license": "ISC",
@@ -46,5 +49,7 @@
     "webpack-merge": "4.1.0",
     "webpack-node-externals": "1.6.0"
   },
-  "proxy": "http://localhost:3004"
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
 }
