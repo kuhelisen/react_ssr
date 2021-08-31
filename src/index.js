@@ -55,6 +55,8 @@ mongoose
 	.catch(err => console.log(err));
 
 
-app.listen(3006, () => {
+const port = process.env.PORT || 3006
+
+app.listen(port, () => {
 	console.log('app is listeinig on port 3006')
 })
