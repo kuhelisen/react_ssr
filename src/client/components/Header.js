@@ -7,8 +7,8 @@ const Header = () => {
       <div className="nav-wrapper">
         {/* <Link to="/" className="brand-logo">Fitso</Link> */}
         <ul className="right">
-          <li><Link to="/sports">Membership</Link></li>
-          <li><Link to="/sports">GetApp</Link></li>
+          <li><Link to="/badminton">Membership</Link></li>
+          <li><Link to="/badminton">GetApp</Link></li>
         </ul>
       </div>
     </nav>
