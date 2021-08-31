@@ -1,6 +1,6 @@
 import 'babel-polyfill'
 import express from 'express'
-import cors from 'cors'
+// import cors from 'cors'
 import { matchRoutes } from 'react-router-config'
 import mongoose from 'mongoose'
 import bodyParser from 'body-parser'
@@ -20,7 +20,7 @@ app.use(bodyParser.json())
 
 app.use(express.static('public'))
 
-app.use(cors())
+// app.use(cors())
 
 //use route
 app.use('/api/sports', sports);
